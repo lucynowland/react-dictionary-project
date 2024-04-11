@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --content-color: #feffdf;
+  --box-color: #dde0ab;
+  --heading-font: "Libre Franklin", sans-serif;
+  --content-font: "Libre Baskerville", serif;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.search-input {
+  margin-right: 3px;
+  padding: 3px;
+  position: relative;
+  top: 2px;
+  width: 75%;
+}
+
+.btn-styling {
+  background-color: var(--content-color);
+  border: 1px solid #97cba9;
+  color: #97cba9;
+}
+
+.btn-styling:hover {
+  background-color: var(--box-color);
+  border: 1px solid white;
+  color: white;
+}

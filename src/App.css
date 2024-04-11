@@ -15,6 +15,16 @@
   letter-spacing: 0.5px;
   text-align: center;
   margin: 35px 0;
+  margin-bottom: 15px;
+}
+
+.App p {
+  color: var(--content-color);
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 footer {
@@ -28,7 +38,7 @@ footer {
 footer a {
   color: var(--content-color);
   text-decoration: none;
-  transition: all 150ms ease-in-out;
+  transition: all 130ms ease-in-out;
 }
 
 footer a:hover {
