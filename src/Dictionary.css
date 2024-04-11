@@ -13,6 +13,7 @@ form {
 }
 
 .search-input {
+  font-family: var(--content-font);
   margin-right: 3px;
   padding: 3px;
   position: relative;
@@ -24,6 +25,7 @@ form {
   background-color: var(--content-color);
   border: 1px solid #97cba9;
   color: #97cba9;
+  font-family: var(--content-font);
 }
 
 .btn-styling:hover {
