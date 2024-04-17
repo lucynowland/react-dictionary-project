@@ -25,6 +25,7 @@
   background-color: rgba(221, 224, 171, 0.7);
   border: 1px solid white;
   border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 15px;
   margin: 30px;
 }
@@ -39,15 +40,21 @@
   text-transform: capitalize;
 }
 
-.MeaningsSection p {
+.meaningsHeading {
   color: white;
-  font-size: 16px;
-  margin-bottom: 3px;
+  font-family: var(--heading-font);
+  margin-bottom: 8px;
 }
 
-.MeaningsSection strong {
-  font-family: var(--heading-font);
-  font-weight: 500;
+.MeaningsSection .definition {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.MeaningsSection .definition::first-letter {
+  text-transform: capitalize;
 }
 
 .MeaningsSection em {
@@ -55,10 +62,26 @@
   font-family: var(--heading-font);
   font-weight: 200;
   display: block;
-  text-align: center;
-  margin-bottom: 5px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.MeaningsSection em::first-letter {
+  text-transform: capitalize;
 }
 
 .Synonyms li {
-  color: white;
+  background-color: var(--content-color);
+  border-radius: 10px;
+  color: #97cba9;
+  display: inline-block;
+  font-family: var(--content-font);
+  font-size: 13px;
+  list-style: none;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.Synonyms li::first-letter {
+  text-transform: capitalize;
 }

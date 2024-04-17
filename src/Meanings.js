@@ -10,13 +10,11 @@ export default function Meanings(props) {
       <section className="MeaningsSection">
         <div className="Meanings">
           <h3>{props.meanings.partOfSpeech}</h3>
-          <p>
-            <strong>Definition:</strong> {props.meanings.definition}
-          </p>
-          <em>
-            {" "}
-            <strong>Exemplar:</strong> {props.meanings.example}
-          </em>
+          <h6 className="meaningsHeading">Definition:</h6>
+          <p className="definition">{props.meanings.definition}</p>
+          <br />
+          <h6 className="meaningsHeading">Exemplar:</h6>
+          <em>{props.meanings.example}</em>
           <Synonyms synonyms={props.meanings.synonyms} />
         </div>
       </section>
@@ -26,9 +24,8 @@ export default function Meanings(props) {
       <section className="MeaningsSection">
         <div className="Meanings">
           <h3>{props.meanings.partOfSpeech}</h3>
-          <p>
-            <strong>Definition:</strong> {props.meanings.definition}
-          </p>
+          <h6 className="meaningsHeading">Definition:</h6>
+          <p className="definition">{props.meanings.definition}</p>
         </div>
       </section>
     );
