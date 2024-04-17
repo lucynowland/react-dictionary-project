@@ -45,8 +45,9 @@
   margin-bottom: 3px;
 }
 
-.MeaningsSection p::first-letter {
-  text-transform: capitalize;
+.MeaningsSection strong {
+  font-family: var(--heading-font);
+  font-weight: 500;
 }
 
 .MeaningsSection em {
@@ -58,6 +59,6 @@
   margin-bottom: 5px;
 }
 
-.MeaningsSection em::first-letter {
-  text-transform: capitalize;
+.Synonyms li {
+  color: white;
 }
