@@ -11,14 +11,29 @@ export default function Dictionary() {
     setSearchResults(response.data);
   }
 
+  function handlePexelsResponse(response) {
+    console.log(response.data);
+  }
+
   function searchWord(event) {
     event.preventDefault();
 
     // documentation: https://www.shecodes.io/learn/apis/dictionary
-    let apiKey = "b4695dbeo3231b4ta37cdcd77c20d1fa";
+    const apiKey = "b4695dbeo3231b4ta37cdcd77c20d1fa";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${searchInput}&key=${apiKey}`;
 
     axios.get(apiUrl).then(handleSearchResponse);
+
+    // documentation: https://www.pexels.com/api/documentation/
+    let pexelsApiKey =
+      "CKBYU3peu8gztGPyM172JU1Karg5lk9GsWw0MVvRh8UDGWU2eLrHbFAO";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${searchInput}&per_page=1`;
+
+    axios
+      .get(pexelsApiUrl, {
+        headers: { Authorization: `Bearer${pexelsApiKey}` },
+      })
+      .then(handlePexelsResponse);
   }
 
   function handleWordChange(event) {

@@ -3,8 +3,6 @@ import Synonyms from "./Synonyms";
 import "./SearchResults.css";
 
 export default function Meanings(props) {
-  console.log(props.meanings);
-
   if (props.meanings.example && props.meanings.synonyms) {
     return (
       <section className="MeaningsSection">
@@ -26,6 +24,7 @@ export default function Meanings(props) {
           <h3>{props.meanings.partOfSpeech}</h3>
           <h6 className="meaningsHeading">Definition:</h6>
           <p className="definition">{props.meanings.definition}</p>
+          <Synonyms synonyms={props.meanings.synonyms} />
         </div>
       </section>
     );
