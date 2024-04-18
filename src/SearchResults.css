@@ -26,14 +26,17 @@
   border: 1px solid white;
   border-radius: 8px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: block;
   padding: 15px;
-  margin: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 80%;
 }
 
 .MeaningsSection h3 {
   color: white;
   font-family: var(--heading-font);
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 500;
   margin-bottom: 5px;
   text-align: center;
@@ -43,12 +46,13 @@
 .meaningsHeading {
   color: white;
   font-family: var(--heading-font);
+  font-size: 18px;
   margin-bottom: 8px;
 }
 
 .MeaningsSection .definition {
   color: white;
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
 }
 
